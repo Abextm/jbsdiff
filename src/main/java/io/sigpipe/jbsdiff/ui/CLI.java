@@ -50,9 +50,6 @@ public class CLI {
             printUsage();
         }
 
-        String compression = System.getProperty("jbsdiff.compressor", "bzip2");
-        compression = compression.toLowerCase();
-
         try {
             String command = args[0].toLowerCase();
             File oldFile = new File(args[1]);
@@ -60,7 +57,7 @@ public class CLI {
             File patchFile = new File(args[3]);
 
             if (COMMAND_DIFF.equals(command)) {
-                FileUI.diff(oldFile, newFile, patchFile, compression);
+                FileUI.diff(oldFile, newFile, patchFile);
             } else if (COMMAND_PATCH.equals(command)) {
                 FileUI.patch(oldFile, newFile, patchFile);
             } else {

@@ -174,14 +174,6 @@
         </profile>
     </profiles>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-compress</artifactId>
-            <version>1.5</version>
-        </dependency>
-    </dependencies>
-
     <distributionManagement>
         <snapshotRepository>
             <id>ossrh</id>

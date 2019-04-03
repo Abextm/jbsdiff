@@ -31,15 +31,6 @@ package io.sigpipe.jbsdiff;
  * @author malensek
  */
 public interface DiffSettings {
-
-    /**
-     * Provides the name of the compression algorithm to use during diffing.
-     *
-     * @return String containing a compression algorithm name to be used by the
-     * Commons Compress CompressorStreamFactory.
-     */
-    public String getCompression();
-
     /**
      * Defines the suffix sorting algorithm to be used during Diff creation.
      *
